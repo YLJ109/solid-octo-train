@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ch-zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+
+        }
+        body{
+            width: 1350px;
+        }
+        .dav{
+                /* 导航宽度 */
+                width: 100%;
+                /* 导航高度 */
+                height: 66px;
+                /* 导航背景颜色 */
+                background-color: #8b76a0;  
+        }
+                                      /* 组 */
+        .dav ul{
+            /* 组宽度 */
+            /* width: 1000px; */
+            /* 组居中 */
+            /* margin: 0 auto; */
+        }
+                                    /* 组元素 */
+        .dav ul li{ 
+            /* 字体加粗 */
+            font-weight: 700;
+            /* 浮动 */
+            float: left;
+            /* 宽度 */
+            width: 80px;
+            /* 间距 */
+            margin: 6px 12px ;
+            /* 字体大小 */
+            font-size: 21px;
+            /* 上下宽度 */
+            line-height: 55px;
+            /* 取消超链接左点 */
+            list-style: none;
+            /* 颜色 */
+            color: #000000;
+            /* 背景颜色 */
+            /* background-color: #a586f2; */
+            /* 文字居中 */
+            text-align: center;
+            /* 边角圆化 */
+            border-radius: 30px;
+            /* 高度 */
+            height: 55px;
+        }
+        .dav ul button{
+            margin: 13px;
+            float: left;
+            width: 60px;
+            height: 40px;
+            font-size: 17px;
+            border-radius: 21px;
+            font-weight: 700;
+        }
+        .dav ul input{
+            float: left;
+            width: 200px;
+            height: 40px;
+            margin-top: 12px;
+            margin-left:30px ;
+            border-radius: 21px;
+            font-weight: 700;
+        }
+        .dav ul img{
+            float: left;
+            margin-left: 5px;
+            margin-top: 13px;
+            width: 40px;
+            
+        }
+        .海报{
+            width: 100%;
+        }
+        .海报 video{
+            width: 100%;
+            opacity: 1; 
+        }
+        .海报 h1{
+            position: absolute;
+            top: 180px;
+            width: 1350px;
+            font-size: 130px;
+            text-align: center;
+            color: #000000;
+            font-weight: 700;
+            text-shadow: 15px 15px rgba(158, 10, 10, 0.8);
+        }
+        .dav .按钮{
+            width: 100px;
+            margin-left: 100px;        
+        }
+    </style>
+</head>
+<body>
+                    <!-- 导航 -->
+    <div class="dav">
+        <ul>
+        <a href="https://www.baidu.com"><li>首页</li></a>
+        <a href="hello.html"><li>视频</li></a>
+        <a href=""><li>图片</li></a>
+        <a href=""><li>音乐</li></a>
+        
+        <a href=""><li>管理</li></a>
+        <a href=""><li>关于</li></a>
+        <a href=""><li>联系</li></a>
+        <input type="text">
+        <button>搜索</button>
+        <button class="按钮" >登录/注册</button>
+        <img src="hellologo.png" alt="">
+        </ul>
+
+    </div>
+
+<script>
+    let name,age,number,azz
+    name = prompt("请输入你的名字")
+    // age = prompt("请输入你的年龄")
+    // number = prompt("请输入你的号码")
+    // document.write("你的名字")
+    // document.write(name)
+    // document.write("你的年龄")
+    // document.write(age)
+    // document.write("你的号码")
+    // document.write(number)
+    document.write(`
+    <div class="海报">
+    <h1><i>${name}</i></h1>
+    <video src="video02.mp4"  loop="" autoplay="" muted="" ></video>
+</div>
+   
+    `)
+</script>
+
+
+</body>
+</html>
